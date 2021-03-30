@@ -82,7 +82,14 @@ const Body = (props) => {
   return (
     <Box
       ref={ref}
-      css={{ "& *:focus": { outline: "none" } }}
+      css={{
+        "& *:focus": { outline: "none" },
+        "& .vis-configuration-wrapper": {
+          position: "absolute",
+          top: 0,
+          right: 0,
+        },
+      }}
       bg={useColorModeValue("graphbg", "graphbgdark")}
       flexGrow="1"
       height="1em"

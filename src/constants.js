@@ -69,6 +69,11 @@ export const GRUPOS = {
 };
 
 export const GRAPHOPTIONS = {
+  configure: {
+    filter: function (option, path) {
+      return true;
+    },
+  },
   nodes: { shape: "box" },
   interaction: {
     hover: true,
